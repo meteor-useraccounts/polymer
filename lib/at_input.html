@@ -3,8 +3,8 @@
 </template>
 
 <template name="atTextInput">
-  <div class="at-input {{#if isValidating}}validating{{/if}} {{#if hasError}}has-error{{/if}} {{#if hasSuccess}}has-success{{/if}} {{#if feedback}}has-feedback{{/if}}">
-    {{#if showLabels}}
+  <div class="at-input pure-control-group{{#if isValidating}}validating{{/if}} {{#if hasError}}has-error{{/if}} {{#if hasSuccess}}has-success{{/if}} {{#if feedback}}has-feedback{{/if}}">
+    <!-- {{#if showLabels}}
       <label for="at-field-{{_id}}">
         {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}
       </label>
@@ -16,8 +16,29 @@
     {{#if hasError}}
       <span>{{errorText}}</span>
     {{/if}}
-  </div>
+  </div> -->
+
+  {{#if showLabels}}
+  <paper-input-decorator label=" {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}" floatinglabel="" layout="" vertical="">
+    <input type="{{type}}" id="at-field-{{_id}}" is="core-input" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
+  </paper-input-decorator>
+  {{else}}
+    <input type="{{type}}" id="at-field-{{_id}}" is="core-input" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
+  {{/if}}
+
+  {{#if hasIcon}}
+  <span class="{{iconClass}}"></span>
+  {{/if}}
+  {{#if hasError}}
+  <span>{{errorText}}</span>
+  {{/if}}
+
+</div>
+
 </template>
+
+
+
 
 <template name="atCheckboxInput">
   <div class="at-input">

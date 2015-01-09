@@ -1,8 +1,7 @@
 Package.describe({
-    summary: "Accounts Templates unstyled.",
+    summary: "Accounts Templates for polymer",
     version: "1.2.3",
-    name: "useraccounts:unstyled",
-    git: "https://github.com/meteor-useraccounts/unstyled.git",
+    name: "useraccounts:polymer",
 });
 
 Package.on_use(function(api, where) {
@@ -53,18 +52,19 @@ Package.on_use(function(api, where) {
         "lib/at_title.html",
         "lib/at_title.js",
         "lib/full_page_at_form.html",
-        "lib/at_unstyled.css"
+        "lib/at_unstyled.less"
     ], ["client"]);
 });
 
 Package.on_test(function(api) {
     api.use([
-        "useraccounts:unstyled",
+        "useraccounts:pure",
         "useraccounts:core@1.2.3",
     ]);
 
     api.use([
         "accounts-password",
+        "less",
         "tinytest",
         "test-helpers"
     ], ["client", "server"]);
