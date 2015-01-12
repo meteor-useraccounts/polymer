@@ -52,13 +52,13 @@ Package.on_use(function(api, where) {
         "lib/at_title.html",
         "lib/at_title.js",
         "lib/full_page_at_form.html",
-        "lib/at_unstyled.less"
+        "lib/at_polymer.less"
     ], ["client"]);
 });
 
 Package.on_test(function(api) {
     api.use([
-        "useraccounts:pure",
+        "useraccounts:polymer",
         "useraccounts:core@1.2.3",
     ]);
 

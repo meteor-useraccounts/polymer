@@ -19,19 +19,21 @@
   </div> -->
 
   {{#if showLabels}}
-  <paper-input-decorator label=" {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}" floatinglabel="" layout="" vertical="">
+  <paper-input-decorator label=" {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}" error="{{errorText}}" floatinglabel="" layout="" vertical=""  isInvalid="{{#if hasError}} true {{/if}}">
     <input type="{{type}}" id="at-field-{{_id}}" is="core-input" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
   </paper-input-decorator>
   {{else}}
+
+  <paper-input-decorator error="{{errorText}}" isInvalid="{{#if hasError}} true {{/if}}">
     <input type="{{type}}" id="at-field-{{_id}}" is="core-input" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
+  </paper-input-decorator>
+
   {{/if}}
 
   {{#if hasIcon}}
-  <span class="{{iconClass}}"></span>
+  <core-icon icon="{{iconClass}}"></core-icon>
   {{/if}}
-  {{#if hasError}}
-  <span>{{errorText}}</span>
-  {{/if}}
+
 
 </div>
 
