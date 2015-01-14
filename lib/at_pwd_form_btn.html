@@ -1,6 +1,7 @@
 <template name="atPwdFormBtn">
   <div  horizontal layout center-justified>
-    <paper-button type="submit" class="at-btn submit {{submitDisabled}} " id="at-btn" raised>
+  	<button type="submit" class="at-btn submit {{submitDisabled}} " id="at-btn" hidden></button>
+    <paper-button role="button" id="at-btn-polymer" raised>
       {{buttonText}}
     </paper-button>
   </div>
