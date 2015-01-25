@@ -2,16 +2,13 @@
 useraccounts:polymer
 =====================================
 
- WORK IN PROGRESS - use at your own risk ;)
+ WORK IN PROGRESS - let us know about any problem you might encounter ;)
 
 TODO:
 
-  *text input
   *checkbox input
   *select input
   *radio input
-  *hidden input
-  *social buttons
 
 This package depends on [useraccounts:core](https://atmospherejs.com/useraccounts/core)
 
