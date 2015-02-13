@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Accounts Templates for polymer",
-    version: "1.6.1",
+    version: "1.7.0",
     name: "useraccounts:polymer",
 });
 
@@ -17,7 +17,7 @@ Package.on_use(function(api, where) {
     ], ["client", "server"]);
 
     api.imply([
-        "useraccounts:core@1.6.1",
+        "useraccounts:core@1.7.0",
     ], ["client", "server"]);
 
     api.add_files([
@@ -61,7 +61,7 @@ Package.on_use(function(api, where) {
 Package.on_test(function(api) {
     api.use([
         "useraccounts:polymer",
-        "useraccounts:core@1.6.1",
+        "useraccounts:core@1.7.0",
     ]);
 
     api.use([
