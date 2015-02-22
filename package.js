@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Accounts Templates for polymer",
-    version: "1.5.0",
+    version: "1.8.1",
     name: "useraccounts:polymer",
 });
 
@@ -17,7 +17,7 @@ Package.on_use(function(api, where) {
     ], ["client", "server"]);
 
     api.imply([
-        "useraccounts:core@1.5.0",
+        "useraccounts:core@1.8.1",
     ], ["client", "server"]);
 
     api.add_files([
@@ -37,6 +37,8 @@ Package.on_use(function(api, where) {
         "lib/at_pwd_form_btn.js",
         "lib/at_pwd_link.html",
         "lib/at_pwd_link.js",
+        "lib/at_reCaptcha.html",
+        "lib/at_reCaptcha.js",
         "lib/at_result.html",
         "lib/at_result.js",
         "lib/at_sep.html",
@@ -59,7 +61,7 @@ Package.on_use(function(api, where) {
 Package.on_test(function(api) {
     api.use([
         "useraccounts:polymer",
-        "useraccounts:core@1.5.0",
+        "useraccounts:core@1.8.1",
     ]);
 
     api.use([
