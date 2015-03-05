@@ -44,32 +44,36 @@
 
 <template name="atCheckboxInput">
   <div class="at-input">
-      <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" {{disabled}}>
-      <label for="at-field-{{_id}}">{{displayName}}</label>
+  <core-label horizontal layout>
+      <div flex>{{displayName}}</div>
+      <paper-checkbox type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" {{disabled}} for></paper-checkbox> 
+  </core-label>
   </div>
 </template>
 
 <template name="atSelectInput">
   <div class="at-input">
-    <label for="at-field-{{_id}}">{{displayName}}</label>
-    <select id="at-field-{{_id}}" name="at-field-{{_id}}">
-      {{#each values}}
-        <option value="{{value}}">{{text}}</option>
-      {{/each}}
-    </select>
+    <core-label>
+      <div for="at-field-{{_id}}">{{displayName}}</div>
+      <core-selector id="at-field-{{_id}}" name="at-field-{{_id}}" valueattr="value" for horizontal layout center justified>
+        {{#each values}}
+          <div value="{{value}}">{{text}}</div>
+        {{/each}}
+      </core-selector>
+    </core-label>
   </div>
+
 </template>
 
 <template name="atRadioInput">
   <div class="at-input">
     <label>{{displayName}}</label>
   </div>
-  {{#each values}}
-    <div class="at-input">
-      <input id="at-field-{{id}}-choice-{{value}}" type="radio" name="at-field-{{id}}" value={{value}}>
-      <label>{{text}}</label>
-    </div>
-  {{/each}}
+  <paper-radio-group role="radiogroup" vertical layout>
+    {{#each values}}
+      <paper-radio-button  id="at-field-{{id}}-choice-{{value}}" name="t-field-{{id}}" label="{{text}}" value={{value}}  toggles role="radio" tabindex="0" aria-checked="true" aria-label="{{text}}"  class="core-selected"></paper-radio-button>
+    {{/each}} 
+  </paper-radio-group>
 </template>
 
 <template name="atHiddenInput">
