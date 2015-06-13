@@ -1,29 +1,29 @@
-[![Build Status](https://travis-ci.org/meteor-useraccounts/unstyled.svg?branch=master)](https://travis-ci.org/meteor-useraccounts/unstyled)
+[![Build Status](https://travis-ci.org/meteor-useraccounts/polymer.svg?branch=master)](https://travis-ci.org/meteor-useraccounts/polymer)
 useraccounts:polymer
 =====================================
 
  WORK IN PROGRESS - let us know about any problem you might encounter ;)
 
 ## TODOs
-	
+
 Add the following input types:
 
   - checkbox input
   - select input
   - radio input
 
-Find the proper solution for inheriting AT events for paper-button elements 
+Find the proper solution for inheriting AT events for paper-button elements
 
 
 
 This package depends on [useraccounts:core](https://atmospherejs.com/useraccounts/core)
 
-Learn more [here](http://accounts-templates.meteor.com) or have a look at the full [documentation](https://github.com/meteor-useraccounts/core).
+Learn more [here](http://useraccounts.meteor.com) or have a look at the full [documentation](https://github.com/meteor-useraccounts/core).
 
 
 ## Bring Your Own Polymer
 
-Adding this package with `meteor add useraccounts:polymer` does not add any other packages providing Polymer .This is to let you choose the flavour you prefer! Or using an Atmosphere package, or straight up with bower! 
+Adding this package with `meteor add useraccounts:polymer` does not add any other packages providing Polymer .This is to let you choose the flavour you prefer! Or using an Atmosphere package, or straight up with bower!
 
 
 ## ADD theses imports manually
