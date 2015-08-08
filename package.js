@@ -8,7 +8,6 @@ Package.on_use(function(api, where) {
   api.versionsFrom('METEOR@1.0');
 
   api.use([
-    'less',
     'templating',
   ], 'client');
 
@@ -58,7 +57,7 @@ Package.on_use(function(api, where) {
     'lib/at_title.html',
     'lib/at_title.js',
     'lib/full_page_at_form.html',
-    'lib/at_polymer.less'
+    'lib/at_polymer.css'
   ], ['client']);
 });
 
