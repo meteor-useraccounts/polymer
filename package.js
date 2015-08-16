@@ -2,6 +2,7 @@ Package.describe({
   summary: 'Accounts Templates for polymer',
   version: '1.12.1',
   name: 'useraccounts:polymer',
+  git: 'https://github.com/meteor-useraccounts/polymer.git',
 });
 
 Package.on_use(function(api, where) {
@@ -9,11 +10,16 @@ Package.on_use(function(api, where) {
 
   api.use([
     'templating',
+    'underscore',
   ], 'client');
 
   api.use([
     'useraccounts:core',
   ], ['client', 'server']);
+  
+  // Requires all routing packages loads before this asking for weak dependencies.
+  api.use('useraccounts:flow-routing@1.12.1', ['client', 'server'], {weak: true});
+  api.use('useraccounts:iron-routing@1.12.1', ['client', 'server'], {weak: true});
 
   api.imply([
     'useraccounts:core@1.12.1',
