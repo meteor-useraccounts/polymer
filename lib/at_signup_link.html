@@ -1,8 +1,10 @@
 <template name="atSignupLink">
-  <div class="at-signup-link" horizontal center-justified layout>
-    <p>
+  <div class="at-signup-link horizontal center-justified layout">
+    <p class="paper-font-body1">
       {{preText}}
-      <a href="{{signUpLink}}" id="at-signUp" class="at-link at-signup {{disabled}}">{{linkText}}</a>
+      <a href="{{signUpLink}}" id="at-signUp" class="at-link at-signup {{disabled}}">
+          <paper-button flat>{{linkText}}</paper-button>
+      </a>
       {{suffText}}
     </p>
   </div>

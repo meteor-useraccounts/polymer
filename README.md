@@ -6,15 +6,7 @@ useraccounts:polymer
 
 ## TODOs
 
-Add the following input types:
-
-  - checkbox input
-  - select input
-  - radio input
-
-Find the proper solution for inheriting AT events for paper-button elements
-
-
+- Add keyboard events so enter submits the form
 
 This package depends on [useraccounts:core](https://atmospherejs.com/useraccounts/core)
 
@@ -23,12 +15,12 @@ Learn more [here](http://useraccounts.meteor.com) or have a look at the full [do
 
 ## Bring Your Own Polymer
 
-Adding this package with `meteor add useraccounts:polymer` does not add any other packages providing Polymer .This is to let you choose the flavour you prefer! Or using an Atmosphere package, or straight up with bower!
+Adding this package with `meteor add useraccounts:polymer` does not add any other packages providing Polymer. This is to let you choose the flavour you prefer! Or using an Atmosphere package, or straight up with bower!
 
 
 ## ADD theses imports manually
 
-This package does not automatically add the imports for the elements needed. If you don't have them imported already you should copy/paste these imports :
+This package does not automatically add the imports for the elements needed. If you don't have them imported already you should include these imports:
 
 	 ```HTML
 
@@ -37,9 +29,6 @@ This package does not automatically add the imports for the elements needed. If 
 		<link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
 
 	 ```
-
-
-
 
 ## Contributing
 
