@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Accounts Templates for polymer',
-  version: '1.12.3',
+  version: '1.12.4',
   name: 'useraccounts:polymer',
   git: 'https://github.com/meteor-useraccounts/polymer.git',
 });
@@ -22,7 +22,7 @@ Package.on_use(function(api, where) {
   api.use('useraccounts:iron-routing@1.12.1', ['client', 'server'], {weak: true});
 
   api.imply([
-    'useraccounts:core@1.12.3',
+    'useraccounts:core@1.12.4',
   ], ['client', 'server']);
 
   api.add_files([
@@ -70,7 +70,7 @@ Package.on_use(function(api, where) {
 Package.on_test(function(api) {
   api.use([
     'useraccounts:polymer',
-    'useraccounts:core@1.12.3',
+    'useraccounts:core@1.12.4',
   ]);
 
   api.use([
