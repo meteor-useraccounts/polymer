@@ -1,4 +1,6 @@
+[![Meteor Icon](http://icon.meteor.com/package/useraccounts:polymer)](https://atmospherejs.com/useraccounts/polymer)
 [![Build Status](https://travis-ci.org/meteor-useraccounts/polymer.svg?branch=master)](https://travis-ci.org/meteor-useraccounts/polymer)
+
 useraccounts:polymer
 =====================================
 
